@@ -29,7 +29,8 @@ __END__
       .container{clear:both;font-size:3em;margin:auto;}
       body{background-color:#fff;color:#333;font-family:Arial,Verdana,sans-serif;font-size:62.5%;margin:10% 5% 0 5%;text-align:center;}
       .result{color:#0080ff;font-size:2.5em;padding-top:0.5em;}
-                       
+      .siong{color:#333;padding-top:20em;text-decoration:none;display:block}
+      
   %body
     =yield
 
@@ -38,5 +39,5 @@ __END__
   .container
     Is CSIL down for everyone or just me?                     
   .result= "#{@result}"
-
+  %a{:title => "Teng Siong Ong", :href => "http://siong1987.com", :class => "siong"} developed by siong1987
 
