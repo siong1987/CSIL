@@ -1,0 +1,11 @@
+CSIL Project
+============
+
+How this works?
+---------------
+
+1. Every time you make a request to the frontpage of http://csil.heroku.com, 
+   the backend will try to SSH into CSIL from another server.
+2. If the backend server manages to SSH into CSIL server, it means that CSIL 
+   is not down for that current request.
+3. If the backend server timeouts within 5 seconds, it means that CSIL is down.
